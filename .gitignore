@@ -6,6 +6,7 @@ target/
 
 src/test/resources/browser-profile/
 src/test/resources/new-browser-profile/
+src/test/resources/old-browser-profile/
 
 ### IntelliJ IDEA ###
 .idea/modules.xml

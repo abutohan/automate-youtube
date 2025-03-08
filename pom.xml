@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>org.clevergirl</groupId>
     <artifactId>automate-youtube</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <name>automate-youtube</name>
     <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
+    <url>https://clevergirl.bandcamp.com/album/no-drum-and-bass-in-the-jazz-room</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
