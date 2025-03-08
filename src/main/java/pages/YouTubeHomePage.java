@@ -33,5 +33,4 @@ public class YouTubeHomePage extends BasePage {
         btnSearch.click();
         return new YouTubeResultPage(getDriver());
     }
-
 }

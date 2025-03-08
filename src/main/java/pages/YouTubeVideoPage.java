@@ -19,4 +19,8 @@ public class YouTubeVideoPage extends BasePage {
         WebElement videoDuration = getDriver().findElement(lblVideoDuration);
         return videoDuration.getText();
     }
+
+    public void playVideo(int videoDuration) throws InterruptedException {
+        Thread.sleep(videoDuration);
+    }
 }

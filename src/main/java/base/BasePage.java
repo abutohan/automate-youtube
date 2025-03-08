@@ -5,11 +5,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+import static utils.Constants.TIME_OUT;
+
 public abstract class BasePage {
-    private final static int TIME_OUT = 30;
+
     private final WebDriver driver;
     private final WebDriverWait wait;
-
 
     public BasePage(WebDriver driver) {
         this.driver = driver;

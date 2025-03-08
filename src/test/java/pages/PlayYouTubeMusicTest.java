@@ -19,7 +19,8 @@ public class PlayYouTubeMusicTest extends BaseTest {
         String videoDurationString = youTubeVideoPage.getVideoDuration();
         int videoDurationInt = convertDurationToSeconds(videoDurationString) * 1000;
         System.out.printf("Now playing: %s | %s%n", testData.getString("search_title"), videoDurationString);
-        Thread.sleep(videoDurationInt);
+
+        youTubeVideoPage.playVideo(videoDurationInt);
     }
 
     private int convertDurationToSeconds(String videoDuration) {
@@ -44,4 +45,3 @@ public class PlayYouTubeMusicTest extends BaseTest {
         return getTestDataFromJson("youtube.playlist");
     }
 }
-

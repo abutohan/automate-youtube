@@ -10,7 +10,6 @@ import java.util.List;
 
 public class YouTubeResultPage extends BasePage {
 
-
     private final By anchorVideoTitle = By.xpath("//a[@id=\"video-title\"]");
 
     public YouTubeResultPage(WebDriver driver) {

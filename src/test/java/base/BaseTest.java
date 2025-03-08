@@ -1,6 +1,5 @@
 package base;
 
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -10,10 +9,12 @@ import org.testng.annotations.BeforeMethod;
 import pages.YouTubeHomePage;
 import utils.ReadJSON;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import static utils.Constants.BASE_URL;
 import static utils.Constants.CONFIG_PROPERTIES;
 
 public class BaseTest {
@@ -23,6 +24,7 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp() throws IOException {
+        System.out.println("Opening Browser");
         ChromeOptions chromeOptions = getChromeOptions();
         driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
@@ -30,12 +32,13 @@ public class BaseTest {
 
     @AfterClass
     public void tearDown() {
+        System.out.println("Closing Browser");
         driver.quit();
     }
 
     @BeforeMethod
     public void homePage() {
-        driver.get("https://www.youtube.com");
+        driver.get(BASE_URL);
         homePage = new YouTubeHomePage(driver);
     }
 
